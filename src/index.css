@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* global variables */
+:root{
+  --pink-primary: #f1356d;
+  --pink-secondary: #da2d61;
+  --pink-tertiary: #f51055;
+  --pink-dark: #700223;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+#navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+#navbar h1 {
+  color: var(--pink-primary);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#navbar #links {
+  margin-left: auto;
+}
+
+#navbar a {
+  color: #333;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+#navbar a:hover {
+  color: var(--pink-primary);
+}
+
+#content {
+  max-width: 75%;
+  min-height: 100vh;
+  margin: 40px auto;
+  padding: 20px;
+  position: relative;
+}
+
+#content h2{
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.my-5 h1{
+  color: var(--pink-primary);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+footer span{
+  font-weight: bold;
+  font-size: 125%;
+}
+
+footer .container-xl{
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #f2f2f2;
+  max-width: 600px;
+}
+
+.btn-primary{
+  --bs-btn-color: white;
+  --bs-btn-bg: var(--pink-primary);
+  --bs-btn-border-color:var(--pink-primary);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: var(--pink-secondary);
+  --bs-btn-hover-border-color: var(--pink-secondary);
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: var(--pink-tertiary);
+  --bs-btn-active-border-color: var(--pink-tertiary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: white;
+  --bs-btn-disabled-bg: var(--pink-dark);
+  --bs-btn-disabled-border-color: var(--pink-dark);
 }
