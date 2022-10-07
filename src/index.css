@@ -98,6 +98,17 @@ footer .container-xl{
   max-width: 600px;
 }
 
+home{
+  text-align: center;
+}
+
+home h1{
+  font-size: 3em;
+}
+about{
+text-align: center;
+}
+
 .btn-primary{
   --bs-btn-color: white;
   --bs-btn-bg: var(--pink-primary);
@@ -114,3 +125,4 @@ footer .container-xl{
   --bs-btn-disabled-bg: var(--pink-dark);
   --bs-btn-disabled-border-color: var(--pink-dark);
 }
+
