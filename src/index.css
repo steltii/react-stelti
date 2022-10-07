@@ -15,6 +15,15 @@
   color: #333;
 }
 
+a {
+  color: var(--pink-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink-primary);
+}
+
 #navbar {
   padding: 20px;
   display: flex;
@@ -34,15 +43,19 @@
   margin-left: auto;
 }
 
-#navbar a {
+#navbar a{
   color: #333;
   margin-left: 16px;
-  text-decoration: none;
   padding: 6px;
 }
 
 #navbar a:hover {
-  color: var(--pink-primary);
+  color: var(--pink-secondary);
+}
+
+.home_h1{
+  display: flex;
+  align-items: center;
 }
 
 #content {

@@ -1,8 +1,9 @@
-const Footer = (props) => {
+const Footer = () => {
+    const author = "Jorma";
     return (
         <footer id="footer">
             <div className="container-xl">
-                <span>© copyright: {props.author}</span>
+                <span>© copyright: {author}</span>
             </div>
         </footer>
     );

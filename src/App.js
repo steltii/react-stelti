@@ -1,21 +1,18 @@
-import Navbar from './Navbar'
-import Home from './Home';
-import Carousel from './Carousel';
-import Footer from './Footer';
-import Hero from './Hero';
+import { Routes,  Route } from "react-router-dom";
+import Home from './Pages/Home';
+import About from "./Pages/About";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
-  const author = "Juhani 'Stelti' Koski"
-
   return (
     <div className="App">
-      <Navbar />
-      <div id="content">
-        <Home /> 
-        <Carousel />
-        <Hero />
-        <Footer author={author} />
-      </div>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/About" element={<About />}/>
+      </Routes>
+      <Footer />
     </div>
   );
 }
