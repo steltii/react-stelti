@@ -1,5 +1,5 @@
 const Footer = () => {
-    const author = "Jorma";
+    const author = "Juhani 'Stelti' Koski";
     return (
         <footer id="footer">
             <div className="container-xl">
